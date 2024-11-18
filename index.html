@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angkot Penumpang</title>
+    <style>
+        body {
+            color: red;
+            font-family: Arial, sans-serif;
+        }
+        body p{
+            color: green;
+        }
+        .angkot-container {
+            margin-top: 20px;
+        }
+        .penumpang-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .penumpang-list li {
+            color: black;
+            padding: 8px;
+            border: 1px solid #ddd;
+            margin: 5px 0;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Daftar Penumpang Angkot</h1>
+
+    <div class="angkot-container">
+        <h2>Penumpang yang Ada di Dalam Angkot</h2>
+        <ul id="penumpangList" class="penumpang-list">
+            <!-- Penumpang akan ditampilkan di sini -->
+            
+        </ul>
+    </div>
+
+    <div class="form-container">
+        <h2>Tambah atau Turunkan Penumpang</h2>
+        <input type="text" id="penumpangName" placeholder="Nama Penumpang">
+        <button onclick="tambah()">Tambah Penumpang</button>
+        <button onclick="hapus()">Turunkan Penumpang</button>
+        <p>jumlah penumpang:</p>
+        <h1 id="currentJumlahPenumpang"></h1>
+    </div>
+
+    <script src="angkot.js"></script>
+</body>
+</html>
